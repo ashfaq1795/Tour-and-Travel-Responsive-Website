@@ -18,7 +18,7 @@ const login = (props) => {
     setError("");
     try {
       await signIn(props.login.email.value, props.login.password.value);
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       setError(error.message);
     }
@@ -28,7 +28,7 @@ const login = (props) => {
     setError("");
     try {
       await googleSignIn();
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       setError(error.message);
     }
@@ -74,7 +74,7 @@ const login = (props) => {
             />
           </div>
           Go Back :{" "}
-          <Link to="/home" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             Home
           </Link>
         </div>
