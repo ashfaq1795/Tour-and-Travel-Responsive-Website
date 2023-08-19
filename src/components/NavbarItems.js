@@ -1,7 +1,7 @@
 export const NavbarItems = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
     cName: "NavLinks",
     icon: "fa-solid fa-house"
   },
@@ -25,7 +25,7 @@ export const NavbarItems = [
   },
   {
     title: "login/logout",
-    url: "/signup",
+    url: "/login",
     cName: "NavLinks-mobile"
   }
 ];
