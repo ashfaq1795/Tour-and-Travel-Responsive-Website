@@ -28,11 +28,6 @@
   background-color: #ccc;
 }
 
-@media screen and (max-width: 850px) {
-  .ContactForm {
-    margin: 4rem 2rem;
-  }
-}
 /* login page */
 .LoginForm {
   background-color: black;
@@ -53,8 +48,8 @@
   margin-top: 3rem;
 }
 .loginbtn {
-  margin: 10px;
-  padding: 10px 0;
+  margin-top: 1rem;
+  padding: 6px 10px;
   border-radius: 7px;
   border: none;
   white-space: nowrap;
@@ -93,6 +88,11 @@
   margin-bottom: 5px;
   font-weight: bold;
 }
+form {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 .InputElement {
   width: 100%;
   border-radius: 5px;
@@ -111,4 +111,43 @@
 .Invalid {
   border: 1px solid red;
   background-color: #fda49a;
+}
+
+@media screen and (max-width: 850px) {
+  /* contact.js */
+  .ContactForm {
+    margin: 4rem 2rem;
+  }
+  /* Login.js */
+  .LoginForm {
+    margin: 2rem auto;
+    padding: 1rem 0px;
+    width: 90%;
+  }
+  .formSwitcher {
+    margin-bottom: 10px;
+  }
+  .switch {
+    font-weight: 300;
+  }
+  .LoginForm h6 {
+    margin-top: 0.8rem;
+  }
+  .LoginForm h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .loginbtn {
+    margin-top: 0.8rem;
+    padding: 3px 8px;
+    width: 96%;
+  }
+  /* input.js */
+
+  .Input {
+    padding: 8px;
+  }
+  .InputElement {
+    padding: 3px 8px;
+  }
 }
