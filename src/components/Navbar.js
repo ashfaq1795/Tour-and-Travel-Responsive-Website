@@ -53,13 +53,13 @@ const Navbar = () => {
           );
         })}
         {user ? (
-          <Link to="/">
+          <Link to="/login">
             <button className={classes.btn} onClick={logoutHandler}>
               Logout
             </button>
           </Link>
         ) : (
-          <Link to="/">
+          <Link to="/login">
             <button className={classes.btn}>Login</button>
           </Link>
         )}
