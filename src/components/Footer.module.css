@@ -1,0 +1,63 @@
+.Footer {
+  padding: 4rem 6rem 2rem 6rem;
+  background-color: #000;
+  color: #fff;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  flex-wrap: wrap;
+}
+/* we can also take a instead of i from code */
+.top i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+}
+.top i:hover {
+  color: #3498db;
+}
+.bottom {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+.bottom h4 {
+  font-size: 1.3rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.bottom a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.1rem;
+  padding-bottom: 0.4rem;
+}
+.bottom a:hover {
+  color: #3498db;
+}
+.signature {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+@media screen and (max-width: 850px) {
+  .Footer {
+    padding: 4rem 2rem;
+  }
+  .top i {
+    padding: 1rem 1rem 0 0;
+    margin-left: 0;
+  }
+  .bottom div {
+    width: 50%;
+  }
+}

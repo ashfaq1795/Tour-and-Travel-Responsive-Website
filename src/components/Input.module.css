@@ -1,0 +1,114 @@
+/* contact.js css */
+.ContactForm {
+  margin: 4rem 6rem;
+  text-align: center;
+  box-shadow: 0px 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  border: none;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn:not([disabled]):hover {
+  background-color: #151516;
+  color: #fff;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 850px) {
+  .ContactForm {
+    margin: 4rem 2rem;
+  }
+}
+/* login page */
+.LoginForm {
+  background-color: black;
+  color: white;
+  margin: 2rem auto;
+  padding: 2rem 20px 4rem 20px;
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.LoginForm h2 {
+  text-align: start;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.loginbtn {
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 7px;
+  border: none;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 97%;
+  background-color: green;
+  color: #fff;
+}
+.loginbtn:hover {
+  background-color: darkgreen;
+}
+.formSwitcher {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+.switch {
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;
+}
+.LoginForm h6 {
+  margin-top: 2rem;
+}
+/* Input.js css */
+.Input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.Label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.InputElement {
+  width: 100%;
+  border-radius: 5px;
+  /* when focus input element border appear so outline: none remove it */
+  outline: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  font: inherit; /*copy font style from parent */
+  display: block;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+.InputElement:focus {
+  background-color: #ccc;
+}
+.Invalid {
+  border: 1px solid red;
+  background-color: #fda49a;
+}

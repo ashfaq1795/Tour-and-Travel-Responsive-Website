@@ -1,0 +1,15 @@
+.Abouts {
+  margin: 4rem 6rem;
+  text-align: start;
+}
+.About h1 {
+  padding-bottom: 1rem;
+}
+.About p {
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 850px) {
+  .Abouts {
+    margin: 4rem 2rem;
+  }
+}
