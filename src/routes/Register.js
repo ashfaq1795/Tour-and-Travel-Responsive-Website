@@ -18,7 +18,7 @@ const register = (props) => {
     setError("");
     try {
       await signUp(props.register.email.value, props.register.password.value);
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       setError(error.message);
     }
@@ -28,7 +28,7 @@ const register = (props) => {
     setError("");
     try {
       await googleSignIn();
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       setError(error.message);
     }
@@ -63,7 +63,7 @@ const register = (props) => {
         </button>
         <div className={classes.formSwitcher}>
           Already have an account?{" "}
-          <Link className={classes.switch} to="/">
+          <Link className={classes.switch} to="/login">
             Login
           </Link>
         </div>
@@ -76,7 +76,7 @@ const register = (props) => {
           />
         </div>
         Go Back :{" "}
-        <Link to="/home" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           Home
         </Link>
       </form>
