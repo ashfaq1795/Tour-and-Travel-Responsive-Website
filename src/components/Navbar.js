@@ -43,9 +43,15 @@ const Navbar = () => {
         }
       >
         {updatedNavbarItems.map((NavbarItem, index) => {
+          const handleClick =
+            NavbarItem.title === "Logout" ? logoutHandler : null;
           return (
             <li key={index} onClick={navIconHandler}>
-              <Link to={NavbarItem.url} className={classes[NavbarItem.cName]}>
+              <Link
+                to={NavbarItem.url}
+                className={classes[NavbarItem.cName]}
+                onClick={handleClick}
+              >
                 <i className={NavbarItem.icon}></i>
                 {NavbarItem.title}
               </Link>
